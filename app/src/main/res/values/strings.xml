@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NASAApp</string>
+    <string name="base_url">https://images-api.nasa.gov</string>
+</resources>
