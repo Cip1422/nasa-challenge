@@ -1,30 +1,15 @@
 package com.example.nasaapp;
 
-import android.content.Context;
-
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModel;
-
-import com.example.nasaapp.model.Item;
-import com.example.nasaapp.network.NasaNetworkFactory;
 import com.example.nasaapp.network.Repository;
 import com.example.nasaapp.viewmodel.NasaViewModel;
-
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
-import io.reactivex.Flowable;
 
 @RunWith(Parameterized.class)
 public class ViewModelTest {
