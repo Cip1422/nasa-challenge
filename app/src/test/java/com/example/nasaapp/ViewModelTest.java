@@ -30,16 +30,12 @@ import io.reactivex.Flowable;
 public class ViewModelTest {
     private static final int NUM_REPEATS = 20;
 
-    @Rule
-    public InstantTaskExecutorRule instantExecutorRule = new InstantTaskExecutorRule();
-
     private NasaViewModel viewModel;
     @Mock
     Repository repository;
 
     @Before
     public void setup(){
-        MockitoAnnotations.initMocks(this);
         viewModel = new NasaViewModel(repository);
     }
 
