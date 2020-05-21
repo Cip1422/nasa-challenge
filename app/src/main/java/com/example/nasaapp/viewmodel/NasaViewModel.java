@@ -44,7 +44,7 @@ public class NasaViewModel extends ViewModel {
         return this.imageData;
     }
 
-    private String getPlanet(){
+    public String getPlanet(){
         String[] planets = new String[]{"mercury", "venus","mars", "jupiter","saturn", "uranus", "neptune"};
         Random random = new Random();
         iterator = random.nextInt(7);
